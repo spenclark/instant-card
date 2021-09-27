@@ -1,4 +1,3 @@
-import "./App.css";
 import { theme } from "./theme";
 import { ThemeProvider } from "@material-ui/styles";
 import { Navbar, Footer } from "./Components/Navigation";

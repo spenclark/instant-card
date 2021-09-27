@@ -1,10 +1,8 @@
 import React from "react"
 import {BrowserRouter as Router, Redirect, Route} from "react-router-dom"
-import {makeStyles} from "@material-ui/styles"
-
-import Landing from "./Components/Landing/Landing.jsx"
+import Landing from "./Components/Landing/Landing"
 import Designer from "./Components/Designer/Designer"
-import ContactView from "./Components/Contact/ContactView";
+import ContactView from "./Components/ContactView/Contact";
 
 const Routing = () => {
 
