@@ -1,7 +1,7 @@
 import React from "react"
 import {BrowserRouter as Router, Redirect, Route} from "react-router-dom"
 import Landing from "./Components/Landing/Landing"
-import Designer from "./Components/Designer/Designer"
+import Designer from "./Components/CardDesigner/Designer"
 import ContactView from "./Components/ContactView/Contact";
 
 const Routing = () => {
