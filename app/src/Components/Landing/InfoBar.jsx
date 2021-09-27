@@ -186,11 +186,8 @@ function InfoBar() {
                 </div>
             
             <div className={classes.companyBox}>
-      
-                <div style={{color: "#565656", fontSize: "24px", fontWeight: "600",}}>Infrastructure for Modern ID Cards</div>
-         
-           
-                <div style={{color: "#565656", fontSize: "12px", fontWeight: "600", paddingTop: "10px"}}> Built for the largest enterprises to single-card-orders: same-day shipping, and simple employee mangement. Photo ID badges for employees made easy.</div>
+                <div style={{color: "#565656", fontSize: "24px", fontWeight: "600",}}>Infrastructure for Modern ID Cards</div>       
+                <div style={{color: "#565656", fontSize: "12px", fontWeight: "600", paddingTop: "10px"}}> Built for the largest enterprises to single-card-orders: same-day shipping, and intuitive ordering software. Photo ID cards made easy.</div>
            
             </div>
         </div>
