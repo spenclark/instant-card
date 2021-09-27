@@ -28,6 +28,6 @@ This Web App was built with the following tools and libraries:
 Table of significant implementations of tech stack
 React/JS | Redux | MUI
 ------------ | ------------- | -------------
-* DOM components | ./src/Components/CardDesign | ./src/Components/Navigation (AppBar )
+DOM components | ./src/Components/CardDesign | ./src/Components/Navigation (AppBar)
 
   
