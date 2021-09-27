@@ -130,22 +130,25 @@ export default function ContactView() {
                 <div>
                         <Grid container xs={12} style={{display: "flex", margin: "auto", justifyContent: "space-apart",  marginTop: "2%", width: "80%"}}>
                             {CardArr.map((e) => (
-                                <Grid item sm={12} md={4} className={classes.cardParent}>
-                                    <div className={classes.card}>
-                                        <div className={classes.icon}>
-                                            {e.icon}
-                                        </div>
-                                        <div className={classes.title}> 
-                                            {e.title}
-                                        </div>
-                                        <div style={{padding: "0 50px"}}>
-                                            {e.subTitle}
-                                        </div>
-                                        <div className={classes.action}>
-                                            {e.callToAction}
-                                        </div>
-                                    </div>
-                                </Grid>
+                                    <Grid item sm={12} md={4} className={classes.cardParent}>
+                                        <a href={e.linkTo} style={{textDecoration: "none"}}>
+                                            <div className={classes.card}>
+                                                <div className={classes.icon}>
+                                                    {e.icon}
+                                                </div>
+                                                <div className={classes.title}> 
+                                                    {e.title}
+                                                </div>
+                                                <div style={{padding: "0 50px"}}>
+                                                    {e.subTitle}
+                                                </div>
+                                                <div className={classes.action}>
+                                                    {e.callToAction}
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </Grid>
+                                
                             ))}
                         </Grid>
                 </div>

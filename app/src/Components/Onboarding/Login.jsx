@@ -1,0 +1,1 @@
+// Its generally not convention to store form data in Redux bc it _often_ isnt persistent. In this case its mostly just to demonstrate a 
