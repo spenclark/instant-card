@@ -25,7 +25,7 @@ This Web App was built with the following tools and libraries:
 
 
 ### Examples
-Table of significant implementations of tech stack
+Table of significant implementations of the tech stack
 React/JS | Redux | MUI
 ------------ | ------------- | -------------
 App | ./src/Components/CardDesign | ./src/Components/Navigation (AppBar)
