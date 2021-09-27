@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Redirect, Route} from "react-router-dom"
 import Landing from "./Components/Landing/Landing"
 import Designer from "./Components/CardDesigner/Designer"
 import ContactView from "./Components/ContactView/Contact";
+import ContactForm from "./Components/ContactView/ContactForm";
 
 const Routing = () => {
 
@@ -24,6 +25,11 @@ const Routing = () => {
             to: "/contact"
 
         }, 
+        {
+            usage: ContactForm,
+            exact: false,
+            to: "/contact-us"
+        }
     ]
 
     return(

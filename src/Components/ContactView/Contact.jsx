@@ -4,6 +4,7 @@ import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
 import {makeStyles } from "@material-ui/styles"
+import ContactSubComponent from "./ContactSubComponent";
 
 const useStyles = makeStyles((theme) => ({
     slanted: {
@@ -114,7 +115,7 @@ export default function ContactView() {
         <>
             {/* <div className={classes.slanted}></div> */}
 
-            <div style={{margin: "auto", height: "80vh", width: "100%", }}>
+            <div style={{margin: "auto", height: "60vh", width: "100%", }}>
                     <div style={{margin: "auto", width: "100%", }}>
                     {/* Title Div */}
                     <div className={classes.textDiv}>
@@ -153,30 +154,11 @@ export default function ContactView() {
                         </Grid>
                 </div>
                 {/* Reroute Div - Easy flow if card options leave user stuck */}
-                <div>
-                    <div>
-                        <Grid container xs={12} >
-                            <Grid item md={12} xs={6}>
-                                <Typography>
-
-                                </Typography>
-                                <Typography>
-                                    
-                                </Typography>
-                            </Grid>
-                            <Grid item md={12} xs={6}>
-                                <Typography>
-
-                                </Typography>
-                                <Typography>
-                                    
-                                </Typography>
-                            </Grid>
-                        </Grid>
-                    </div>
+               
                 </div>
-                </div>
+                
             </div>
+            <ContactSubComponent />
     </>                          
     )
 }
