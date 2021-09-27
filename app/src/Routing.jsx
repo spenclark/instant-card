@@ -2,15 +2,9 @@ import React from "react"
 import {BrowserRouter as Router, Redirect, Route} from "react-router-dom"
 import {makeStyles} from "@material-ui/styles"
 
-import Landing from "./Components/Landing"
+import Landing from "./Components/Landing/Landing.jsx"
 import Designer from "./Components/Designer/Designer"
 import ContactView from "./Components/Contact/ContactView";
-
-const useStyles = makeStyles( {
-    App: {
-        // margin: "0 15%"
-    }
-})
 
 const Routing = () => {
 
@@ -38,7 +32,7 @@ const Routing = () => {
 
     return(
         <Router>
-            <div className={classes.App}>
+            <div>
                     {routes.map((route) => {
                         return <Route 
                             key={route.to}
@@ -47,7 +41,7 @@ const Routing = () => {
                             render={() => <route.usage />}
                             />
                     })}
-                    </div> 
+            </div> 
         </Router>
     )
 }
