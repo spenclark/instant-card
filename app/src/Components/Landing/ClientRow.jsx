@@ -1,7 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/styles"
-import Clients from "../Assets/content/clients.webp"
-import Trustpilot from "../Assets/content/trustpilot.webp"
+import Clients from "../../Assets/content/clients.webp"
+import Trustpilot from "../../Assets/content/trustpilot.webp"
 const useStyles = makeStyles((theme)=> ({
     root: {
         paddingTop: theme.spacing(8),

@@ -1,10 +1,10 @@
 import React from "react"
-import DisplayCard from "../Assets/DisplayCard"
+import DisplayCard from "../../Assets/DisplayCard"
 import { Grid } from "@material-ui/core"
 import { makeStyles } from "@material-ui/styles"
 import ClientRow from "./ClientRow"
 // import Designer from "./Designer/Designer"
-import DesignIntro from "./Designer/DesignIntro"
+import DesignIntro from "../CardDesigner/DesignIntro"
 import InfoBar from "./InfoBar"
 import ContactBar from "./ContactBar"
 
@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme)=> ({
         margin: "auto",
         [theme.breakpoints.down("md")]: {
             maxWidth: "90%",
-          },
+          }, 
         [theme.breakpoints.down("xs")]: {
             paddingTop: theme.spacing(4),
             maxWidth: "95%",
