@@ -42,11 +42,9 @@ const footerStyles = makeStyles({
         boxShadow: "none",
         borderTop: "1px solid #F3F3F3",
         display: "flex",
-        padding: "0px 18%",
-        position: "absolute",
-        bottom: "0",
-        width: "100%",
-        height: "20vh",    },
+        padding: "0",
+        height: "10vh",
+      },
 })
 
 function Footer() {

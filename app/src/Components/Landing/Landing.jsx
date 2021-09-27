@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme)=> ({
             flexDirection: "column"
         },
     },
-    SampleButton: {
+    sampleButton: {
         padding: "15px 50px",
         backgroundColor: "#E9E9E9",
         borderRadius: "5px",
@@ -145,13 +145,15 @@ const heroText = {
                                 {heroText.subTitle}
                             </h2>
                                 <div className={classes.heroButtons} >
-                                    <a href="#sample"><button className={classes.SampleButton} >
+                                    <a href="#sample"><button className={classes.sampleButton} >
                                         {heroText.sampleText}
                                     </button>
                                     </a>
-                                    <button className={classes.contactButton}>
+                                    <a href="/contact">
+                                    <button className={classes.contactButton} >
                                         {heroText.contactUs}
                                     </button>
+                                    </a>
                                 </div >
                         </Grid >
                     <Grid container item xs={12} sm={5} className={classes.media}>
