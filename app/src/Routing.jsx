@@ -26,8 +26,6 @@ const Routing = () => {
         }, 
     ]
 
-    const classes = useStyles()
-
     return(
         <Router>
             <div>
