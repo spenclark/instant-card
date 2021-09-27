@@ -1,4 +1,29 @@
 import React from "react"
+import { makeStyles } from "@material-ui/styles"
+import { AppBar, Toolbar, Typography, Box, Grid } from "@material-ui/core"
+
+const navStyles = makeStyles((theme) => ({
+    // navbar styles
+    root: {
+        background: "transparent",
+        borderBottom: "#F3F3F3 1px solid",
+        boxShadow: "none"
+    },
+    bar: {
+
+    },
+    logo: {
+
+
+    
+    },
+    logoSpan: {
+
+
+    },
+
+}))
+
 
 function Navbar() {
     // this is the navbar, will appear at the top of all pages for this app. Also we will call the UseEffect hook to select -- this is so we prevents errors of someone navigates to host/design before selecting a design
@@ -10,27 +35,6 @@ function Navbar() {
             </AppBar>
         )
 }
-
-function Footer() {
-    const classes = navStyles()
-       
-    return (
-            <AppBar className={classes.root} position="stuck">
-                <Toolbar></Toolbar>
-            </AppBar>
-        )
-}
-
-const footerStyles = makeStyles({
-    root: {
-        backgroundColor: "#fcfcfc",
-        boxShadow: "none",
-        borderTop: "1px solid #F3F3F3",
-        display: "flex",
-        padding: "0px 18%",
-        height: "40vh",
-    },
-})
 
 const footerStyles = makeStyles({
     root: {
