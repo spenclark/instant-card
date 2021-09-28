@@ -5,7 +5,7 @@ import {Grid, MenuItem, TextField} from "@material-ui/core";
 
 export const TextFormField = props => {
     return (
-        <Grid item xs={12} sm={props.sm}>
+        <Grid item xs={props.xs} sm={props.sm}>
             <TextField
                 fullWidth
                 select={props.select}
@@ -27,4 +27,5 @@ export const TextFormField = props => {
                 ))}
             </TextField>
         </Grid>
-    );
+    )}
+    ;
