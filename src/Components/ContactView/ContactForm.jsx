@@ -2,6 +2,10 @@ import React from "react"
 import TextField from "@material-ui/core/TextField";
 import { Box, Button, Paper, Typography, Grid } from "@material-ui/core";
 import ContactSubComponent from "./ContactSubComponent"
+
+const formObj = [
+    
+]
 function ContactForm() {
     return(
         <>
@@ -16,7 +20,7 @@ function ContactForm() {
             </Box>
             <Grid>
                 <Grid>
-                    
+
                 </Grid>
                 <Grid>
                     
