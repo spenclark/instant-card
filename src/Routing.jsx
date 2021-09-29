@@ -4,6 +4,7 @@ import Landing from "./Components/Landing/Landing"
 import Designer from "./Components/CardDesigner/Designer"
 import ContactView from "./Components/ContactView/Contact";
 import ContactForm from "./Components/ContactView/ContactForm";
+import FAQ from "./Components/ContactView/FAQ"
 
 const Routing = () => {
 
@@ -29,6 +30,11 @@ const Routing = () => {
             usage: ContactForm,
             exact: false,
             to: "/contact-us"
+        },
+        {
+            usage: FAQ,
+            exact: false,
+            to: "/faq"
         }
     ]
 
