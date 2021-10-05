@@ -53,7 +53,7 @@ const Routing = () => {
                             path={route.to}
                             exact={route.exact}
                             render={() => <route.usage />}
-                            // ADD SUBROUTES TO OBJECT
+                            // ADD SUBROUTES TO OBJECT (NOT NEEDED but would be as simple as adding an object to the route and then mapping it)
                             />
                     })}
             </div> 
