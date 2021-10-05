@@ -6,10 +6,10 @@ import { Typography, Box, Grid, Paper, Rating, List, ListSubheader, ListItem, Li
 
 function renderMedia(mediaType, media) {
   if(mediaType === "image"){
-   return  <img src={media} width="560px" height="auto"></img>
+   return  <img src={media} width="75%" height="auto"></img>
   } else if(mediaType === "video") {
     return (
-    <iframe width="560px" height="360px" src={`https://www.youtube.com/embed/${media}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <iframe width="75%" height="360px" src={`https://www.youtube.com/embed/${media}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
     )
   } else {
@@ -20,7 +20,7 @@ function renderMedia(mediaType, media) {
 }
 
 const FAQlist = (props) => (
-    <List> 
+    <List style={{padding: "10px"}}> 
     <Typography style={{textAlign: "center", fontWeight: "600"}}>
       Find Awnsers
     </Typography>
@@ -30,7 +30,7 @@ const FAQlist = (props) => (
           <ListSubheader style={{fontSize: "12px", fontWeight: "600", padding: "0"}}>{`${e.category}`}</ListSubheader>
           {e.items.map((item) => (
             <ListItem key={item.title} style={{fontSize: "12px", padding: "0"}}>
-              <ListItemText primary={`${item.title}`} style={{fontSize: "12px"}}/>
+              <ListItemText primary={`${item.title}`} fontSize="12px" />
             </ListItem>
           ))}
         </ul>
@@ -45,16 +45,16 @@ export default function FAQ() {
       console.log(props.props.body)
       return (
       <Box>
-          <Grid container xs={12} sm={12}>
-              <Grid item xs={6}>
-                  <Typography>
+          <Grid container xs={12} sm={12} style={{marginTop: "40px" }}>
+              <Grid item xs={12} sm={6} style={{marginTop: "20px", padding: "2%"}}>
+                  <Typography style={{fontWeight: "600", fontSize: "14px"}}>
                       {props.props.title}
                   </Typography>
-                  <Typography>
+                  <Typography style={{fontWeight: "500", fontSize: "14px"}}>
                      {props.props.body}
                   </Typography>
               </Grid>
-              <Grid item xs={12} sm={6} >
+              <Grid item xs={12} sm={6} style={{display: "flex", justifyContent: "center"}}>
                     {renderMedia(props.props.mediaType, props.props.media)}
               </Grid>
           </Grid>
@@ -63,17 +63,18 @@ export default function FAQ() {
     )}
 
     return (
-        <Box style={{margin: "auto", height: "80vh"}} >
+        <Box style={{margin: "auto", height: "80vh", padding: "18px"}} >
           <Grid container xs={12} style={{margin: "auto", height: "100%"}}>
             <Grid item xs={12} sm={2} style={{
                     background: '#EDEDED',
-                    // padding: "12px",
+                    padding: "0px",
                     overflow: 'auto',
+                    borderRadius: "5px"
                     }}>
               <FAQlist></FAQlist>
             </Grid>
             <Grid item xs={12} sm={10}>
-              <Showcase props={faqData[1].items[0]} />
+              <Showcase props={faqData[1].items[1]} />
             </Grid>
           </Grid>
         </Box>

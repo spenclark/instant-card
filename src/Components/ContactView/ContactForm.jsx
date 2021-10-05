@@ -76,13 +76,6 @@ const formObj = [
                 select: true,
                 multiline: false,
                 data: [
-                    // {
-                    //     value: "Select a range of employees",
-                    //     label: "Select a range of employees",
-                    //     disabled: true,
-                    //     selected: true,
-
-                    // },
                     {
                         value: "1-99",
                         label: "1-99",
@@ -179,7 +172,7 @@ const formObj = [
             name: "employee_range",
             variant: "filled",
             multiline: true,
-            // rows: "3",
+            rows: "3",
             data: [],
         }
     },

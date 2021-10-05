@@ -5,6 +5,7 @@ import Designer from "./Components/CardDesigner/Designer"
 import ContactView from "./Components/ContactView/Contact";
 import ContactForm from "./Components/ContactView/ContactForm";
 import FAQ from "./Components/ContactView/FAQ"
+import Blog from "./Components/ContactView/Blog";
 
 const Routing = () => {
 
@@ -35,6 +36,11 @@ const Routing = () => {
             usage: FAQ,
             exact: false,
             to: "/faq"
+        },
+        {
+            usage: Blog,
+            exact: false,
+            to: "/blog"
         }
     ]
 
@@ -47,6 +53,7 @@ const Routing = () => {
                             path={route.to}
                             exact={route.exact}
                             render={() => <route.usage />}
+                            // ADD SUBROUTES TO OBJECT
                             />
                     })}
             </div> 
