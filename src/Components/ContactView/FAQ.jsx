@@ -2,7 +2,8 @@
 import React from "react"
 import {faqData} from "../../utils/faqData"
 
-import { Typography, Box, Grid, Paper, Rating, List, ListSubheader, ListItem, ListItemText } from "@material-ui/core"
+import { Typography, Box, Grid, List, ListSubheader, ListItem, ListItemText } from "@material-ui/core"
+import { Rating } from "@mui/material"
 
 function renderMedia(mediaType, media) {
   if(mediaType === "image"){
@@ -13,9 +14,9 @@ function renderMedia(mediaType, media) {
     </iframe>
     )
   } else {
-      <p>
-        
-      </p>
+    <p>
+     {/* No Media */}
+    </p>
   }
 }
 
@@ -46,7 +47,7 @@ export default function FAQ() {
       return (
       <Box>
           <Grid container xs={12} sm={12} style={{marginTop: "40px" }}>
-              <Grid item xs={12} sm={6} style={{marginTop: "20px", padding: "2%"}}>
+              <Grid item xs={12} sm={6} style={{marginTop: "20px", padding: "2%", display: "flex", flexDirection: "column"}}>
                   <Typography style={{fontWeight: "600", fontSize: "14px"}}>
                       {props.props.title}
                   </Typography>
@@ -57,8 +58,14 @@ export default function FAQ() {
               <Grid item xs={12} sm={6} style={{display: "flex", justifyContent: "center"}}>
                     {renderMedia(props.props.mediaType, props.props.media)}
               </Grid>
+             <Grid item xs={12}>
+                    <div style={{display: "flex", flexDirection: "column", marginTop: "160px", marginLeft: "3%"}}>
+                      <subtext style={{fontSize: "12px", fontWeight: "600", color: "grey"}}>Did you find this awnser helpful?</subtext>
+                      <Rating name="half-rating" defaultValue={0} precision={0.5} />
+                    </div>
+             </Grid>
           </Grid>
-          {/* <Rating name="half-rating" defaultValue={2.5} precision={0.5} /> */}
+          
       </Box>
     )}
 
@@ -74,7 +81,7 @@ export default function FAQ() {
               <FAQlist></FAQlist>
             </Grid>
             <Grid item xs={12} sm={10}>
-              <Showcase props={faqData[1].items[1]} />
+              <Showcase props={faqData[1].items[0]} />
             </Grid>
           </Grid>
         </Box>
