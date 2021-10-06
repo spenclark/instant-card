@@ -14,6 +14,7 @@ export const posts = [
       "https://instantcard.net/wp-content/uploads/2021/08/studentidpreferredpronouns3.png",
     tag: "Product",
     date: "August 17th, 2021",
+    author: "Amanda Bott",
   },
   {
     title: "Providing Emergency Medical Information in your ID badges",
@@ -21,6 +22,7 @@ export const posts = [
     media: "https://instantcard.net/wp-content/uploads/2016/02/badge.png",
     tag: "Product",
     date: "August 6th, 2021",
+    author: "Amanda Bott",
   },
   {
     title: "Extending the life of your ID badges",
@@ -29,6 +31,7 @@ export const posts = [
       "https://instantcard.net/wp-content/uploads/2021/06/badgewomanprotector-400x585.jpg",
     tag: "Product",
     date: "July 22nd, 2021",
+    author: "Amanda Bott",
   },
   {
     title: "Why outsource ID card printing?",
@@ -37,6 +40,7 @@ export const posts = [
       "https://instantcard.net/wp-content/uploads/2021/06/happy-confident-businesswoman-showing-id-card2.jpg",
     tag: "Support",
     date: "August 1th, 2021",
+    author: "Amanda Bott",
   },
   {
     title:
@@ -46,6 +50,7 @@ export const posts = [
       "https://instantcard.net/wp-content/uploads/2021/06/happy-confident-businesswoman-showing-id-card2.jpg",
     tag: "Security",
     date: "August 6th, 2021",
+    author: "David Finkle",
   },
   {
     title: "Troubleshooting Your ID Card Printer",
@@ -54,6 +59,7 @@ export const posts = [
       "https://instantcard.net/wp-content/uploads/2021/01/fix-your-printer-scaled.jpg",
     tag: "Support",
     date: "June 11th, 2021",
+    author: "David Allen",
   },
   {
     title: "NonProfit? Have a Discount!",
@@ -70,6 +76,7 @@ export const posts = [
     media:
       "https://instantcard.net/wp-content/uploads/2020/06/Is-your-key-card-even-safe-768x672.jpg",
     date: "October 12th, 2019",
+    author: "David Finkelstein",
   },
   {
     title: "InstantCard announces full integration with the ADP Marketplace",
@@ -78,5 +85,6 @@ export const posts = [
     body: "After nearly six months of development and testing, as well as extensive security validations, InstantCard is pleased to announce that its ID card app is now listed on the ADP Workforce Now® Marketplace, and available to all ADP and InstantCard customers.  This will greatly improve the efficiency with which those corporate clients which use both services will be able to manage their daily operations. Clients are now able to ensure automatic syncing between the master ADP HR database, and the InstantCard ID card database.  New hires, promotions, and terminations which are recorded in the online ADP HR system will be automatically reflected in the InstantCard system.  When a client first signs up, they are presented with an “import” button which allows them to receive into the InstantCard service all data, or a filtered subset of data, from their ADP account.  From that point on, any changes in the cloud-based ADP system will be sent, on a nightly basis, to InstantCard via our API.  However, clients can also at any time click a button to sync changes which have been made to ensure continuous full consistency.",
     tag: "Corporate",
     date: "June 8th, 2020",
+    author: "David Finkelstein",
   },
 ];
