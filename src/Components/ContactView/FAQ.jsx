@@ -23,7 +23,9 @@ export default function FAQ() {
     const HandleSelect = (parentId, itemId) => {
       // parent id = category and item id is the nav item id
       // Could also pass in style change here for selected
+      
       return useSelected(faqData[parentId].items[itemId])
+
     }
 
     const FAQlist = () => (
