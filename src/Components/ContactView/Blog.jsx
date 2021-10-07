@@ -7,9 +7,6 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 const buttons = ["All", "Corporate", "Product", "Support", "Security"]
 const useStyles = makeStyles({
-    featuredClass: {
-
-    },
     filterButton: {
         padding: "8px 15px",
         borderRadius: "25px",

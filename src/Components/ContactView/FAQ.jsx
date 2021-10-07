@@ -4,6 +4,22 @@ import {faqData} from "../../utils/faqData"
 
 import { Typography, Box, Grid, List, ListSubheader, ListItem, ListItemText } from "@material-ui/core"
 import { Rating } from "@mui/material"
+import{ makeStyles } from "@material-ui/styles"
+
+const useStyles = makeStyles({
+
+  notFocused: {
+    fontSize: "12px", borderBottom: "1px solid grey", display: "outline"
+  },
+  focused: {
+      background: "grey",
+      fontSize: "12px",
+      borderBottom: "1px solid grey",
+      display: "outline"
+  },
+})
+
+
 
 function renderMedia(mediaType, media) {
   if(mediaType === "image"){
@@ -16,18 +32,27 @@ function renderMedia(mediaType, media) {
   }
 }
 
+
+
 export default function FAQ() {
     const [selected, useSelected] = useState()
     const [focused, setFocused] = useState()
 
+    const classes = useStyles()
+    
+
+    const toggleFocused = (parentId, itemId) => {
+      setFocused(`${parentId}-${itemId}`);
+    };
     const HandleSelect = (parentId, itemId) => {
       // parent id = category and item id is the nav item id
       // Could also pass in style change here for selected
-      
+      toggleFocused(parentId, itemId)
       return useSelected(faqData[parentId].items[itemId])
 
     }
 
+    
     const FAQlist = () => (
       <List> 
         <Typography style={{textAlign: "center", fontWeight: "600"}}>
@@ -36,9 +61,9 @@ export default function FAQ() {
         {faqData.map((e, pi) => (
           <li key={e.category}>
             <ul>
-              <ListSubheader style={{fontSize: "12px", fontWeight: "600", margin: "auto",  borderBottom: "1px solid grey"}}>{`${e.category}`}</ListSubheader>
+              <ListSubheader style={{fontSize: "12px", margin: "auto",  borderBottom: "1px solid grey"}}>{`${e.category}`}</ListSubheader>
               {e.items.map((item, i) => (
-                <ListItem key={item.title} style={{fontSize: "12px", borderBottom: "1px solid grey", display: "outline"}} onClick={() => HandleSelect(pi, i)}>
+                <ListItem key={item.title} className={focused == `${pi}-${i}` ? classes.focused : classes.notFocused} onClick={() => HandleSelect(pi, i)}>
                   <ListItemText secondary={`${item.title}`} disableTypography={true} style={{fontSize: "12px"}} />
                 </ListItem>
               ))}
