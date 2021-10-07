@@ -96,7 +96,7 @@ const CardArr = [
         title: "Blog & Media",
         subTitle: "Stay upto date with Instantcard's latest news and blogs",
         callToAction: "Start Learning",
-        linkTo: "/newsroom"
+        linkTo: "/blog"
     }
 ]
 
