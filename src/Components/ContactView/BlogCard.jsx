@@ -38,7 +38,7 @@ function BlogCard({props}) {
                         </p>
                 </Grid>
                 <Grid item xs={12} sm={6} style={{display: "flex", justifyContent: "flex-end", width: "100%"}}>            
-                        <img src={props.media} Height="160px" maxWidth="200px" style={{borderRadius: "8px"}}></img>
+                        <img src={props.media} alt="Expected Img" Height="160px" maxWidth="200px" style={{borderRadius: "8px"}}></img>
                 </Grid>
             </Grid>
 

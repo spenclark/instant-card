@@ -40,19 +40,19 @@ function Blog() {
             setData([...posts])
         } else if (value === "Corporate") {
             setData([...posts].filter((e) => (
-                e.tag == "Corporate"
+                e.tag === "Corporate"
             )))
         } else if (value === "Product") {
             setData([...posts].filter((e) => (
-                e.tag == "Product"
+                e.tag === "Product"
             )))
         } else if (value === "Support") {
             setData([...posts].filter((e) => (
-                e.tag == "Support"
+                e.tag === "Support"
             )))
         } else if (value === "Security") {
             setData([...posts].filter((e) => (
-                e.tag == "Security"
+                e.tag === "Security"
             )))
         }
     }

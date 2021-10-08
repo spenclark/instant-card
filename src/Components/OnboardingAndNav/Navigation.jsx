@@ -47,7 +47,6 @@ const LogInButton = styled("Button")({
     fontSize: "14px",
     padding: "10px 32px",
     borderRadius: "5px",
-    fontSize: "13px",
     fontWeight: "600",
     transitionDelay: "60ms",
 })

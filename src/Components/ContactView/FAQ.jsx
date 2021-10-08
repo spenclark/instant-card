@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 
 function renderMedia(mediaType, media) {
   if(mediaType === "image"){
-   return  <img src={media} width="75%" height="auto"></img>
+   return  <img src={media} alt="img Expected" width="75%" height="auto"></img>
   } else if(mediaType === "video") {
     return (
     <iframe width="75%" height="360px" src={`https://www.youtube.com/embed/${media}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -63,7 +63,7 @@ export default function FAQ() {
             <ul>
               <ListSubheader style={{fontSize: "12px", margin: "auto",  borderBottom: "1px solid grey"}}>{`${e.category}`}</ListSubheader>
               {e.items.map((item, i) => (
-                <ListItem key={item.title} className={focused == `${pi}-${i}` ? classes.focused : classes.notFocused} onClick={() => HandleSelect(pi, i)}>
+                <ListItem key={item.title} className={focused === `${pi}-${i}` ? classes.focused : classes.notFocused} onClick={() => HandleSelect(pi, i)}>
                   <ListItemText secondary={`${item.title}`} disableTypography={true} style={{fontSize: "12px"}} />
                 </ListItem>
               ))}

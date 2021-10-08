@@ -1,6 +1,6 @@
 import React from "react"
 import {TextFormField} from "../../utils/TextFormField"
-import { Box, Button, Paper, Typography, Grid } from "@material-ui/core";
+import { Box, Button, Typography, Grid } from "@material-ui/core";
 import ContactSubComponent from "./ContactSubComponent"
 import WhyInstantCard from "../../utils/WhyInstantCard";
 

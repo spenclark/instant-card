@@ -5,7 +5,7 @@ import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
 import {makeStyles } from "@material-ui/styles"
 import ContactSubComponent from "./ContactSubComponent";
-import Polygon from "../../Assets/content/Polygon.svg"
+
 const useStyles = makeStyles((theme) => ({
     slanted: {
         border: "blue 1px solid",
@@ -50,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center",
         position: "absolute",
-        background: "white",
         marginBottom: "165px",
         color: "#CFCFCF",
         background: "#474747"
@@ -97,14 +96,6 @@ const CardArr = [
         subTitle: "Stay upto date with Instantcard's latest news and blogs",
         callToAction: "Start Learning",
         linkTo: "/blog"
-    }
-]
-
-const InfoDiv = [
-    {   
-
-    }, {
-
     }
 ]
 

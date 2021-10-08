@@ -1,5 +1,5 @@
 import React from "react"
-import {BrowserRouter as Router, Redirect, Route} from "react-router-dom"
+import {BrowserRouter as Router, Route} from "react-router-dom"
 import Landing from "./Components/Landing/Landing"
 import Designer from "./Components/CardDesigner/Designer"
 import ContactView from "./Components/ContactView/Contact";
