@@ -6,7 +6,7 @@ import ContactView from "./Components/ContactView/Contact";
 import ContactForm from "./Components/ContactView/ContactForm";
 import FAQ from "./Components/ContactView/FAQ"
 import Blog from "./Components/ContactView/Blog";
-
+import SignUp from "./Components/OnboardingAndNav/SignUp"
 const Routing = () => {
 
     const routes = [
@@ -41,6 +41,11 @@ const Routing = () => {
             usage: Blog,
             exact: false,
             to: "/blog"
+        },
+        {
+            usage: SignUp,
+            exact: false,
+            to: "/signup"
         }
     ]
 

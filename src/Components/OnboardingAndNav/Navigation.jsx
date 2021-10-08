@@ -50,9 +50,6 @@ const LogInButton = styled("Button")({
     fontSize: "13px",
     fontWeight: "600",
     transitionDelay: "60ms",
-    "&:hover": {
-        color: "black"
-    }
 })
 
 const SignUpButton = styled(LogInButton)({
@@ -92,9 +89,11 @@ function Navbar() {
                         <LogInButton>
                             Sign In
                         </LogInButton>
-                        <SignUpButton>
-                           Try Now
-                        </SignUpButton>
+                        <a href="/signup">
+                            <SignUpButton>
+                            Try Now
+                            </SignUpButton>
+                        </a>
                     </Box>
                 </Toolbar>
             </AppBar>

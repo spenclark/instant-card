@@ -59,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#3E3E3E",
         fontSize: '12px',
         fontWeight: "600",
+        textDecoration: "none",
         [theme.breakpoints.down("xs")]: {
             width: "100%",
            
@@ -100,10 +101,11 @@ export default function ContactBar() {
                             Contact Us
                             </a>
                         </div>
-                  
-                    <div  className={classes.startBtn}>
-                        Get Started
-                    </div>
+                    <a href="/signup" className={classes.startBtn}>
+                        <div >
+                            Get Started
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
