@@ -4,6 +4,7 @@ import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
 import {makeStyles } from "@material-ui/styles"
+import ContactSubComponent from "./ContactSubComponent";
 
 const useStyles = makeStyles((theme) => ({
     slanted: {
@@ -49,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center",
         position: "absolute",
-        background: "white",
         marginBottom: "165px",
         color: "#CFCFCF",
         background: "#474747"
@@ -95,15 +95,7 @@ const CardArr = [
         title: "Blog & Media",
         subTitle: "Stay upto date with Instantcard's latest news and blogs",
         callToAction: "Start Learning",
-        linkTo: "/newsroom"
-    }
-]
-
-const InfoDiv = [
-    {   
-
-    }, {
-
+        linkTo: "/blog"
     }
 ]
 
@@ -113,12 +105,12 @@ export default function ContactView() {
     return (
         <>
             {/* <div className={classes.slanted}></div> */}
-
-            <div style={{margin: "auto", height: "80vh", width: "100%", }}>
+            {/* <img src={Polygon} style={{ position: "absolute", left: 0, zIndex: 0,}} /> */}
+            <div style={{margin: "auto", width: "100%", marginBottom:"5%" }}>
                     <div style={{margin: "auto", width: "100%", }}>
                     {/* Title Div */}
                     <div className={classes.textDiv}>
-                        <Typography variant="h3" style={{fontWeight: "600", fontSize: "28px", padding: "6px", zIndex: "2" }}>
+                        <Typography variant="h3" style={{fontWeight: "600", fontSize: "28px", padding: "6px",}}>
                             {contactUs.title}
                         </Typography>
                         <Typography variant="p" style={{fontWeight: "500", fontSize: "18px", }}>
@@ -153,30 +145,12 @@ export default function ContactView() {
                         </Grid>
                 </div>
                 {/* Reroute Div - Easy flow if card options leave user stuck */}
-                <div>
-                    <div>
-                        <Grid container xs={12} >
-                            <Grid item md={12} xs={6}>
-                                <Typography>
-
-                                </Typography>
-                                <Typography>
-                                    
-                                </Typography>
-                            </Grid>
-                            <Grid item md={12} xs={6}>
-                                <Typography>
-
-                                </Typography>
-                                <Typography>
-                                    
-                                </Typography>
-                            </Grid>
-                        </Grid>
-                    </div>
+               
                 </div>
-                </div>
+                
             </div>
+            <ContactSubComponent />
+            <p style={{paddingBottom:"5%"}}></p>
     </>                          
     )
 }

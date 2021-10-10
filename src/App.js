@@ -1,6 +1,6 @@
 import { theme } from "./theme";
 import { ThemeProvider } from "@material-ui/styles";
-import { Navbar, Footer } from "./Components/Navigation";
+import { Navbar, Footer } from "./Components/OnboardingAndNav/Navigation";
 import Routing from "./Routing";
 
 function App() {

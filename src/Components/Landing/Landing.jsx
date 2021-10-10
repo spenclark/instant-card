@@ -1,5 +1,5 @@
 import React from "react"
-import DisplayCard from "../../Assets/DisplayCard"
+import DisplayCard from "../../utils/DisplayCard"
 import { Grid } from "@material-ui/core"
 import { makeStyles } from "@material-ui/styles"
 import ClientRow from "./ClientRow"

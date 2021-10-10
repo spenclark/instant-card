@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/styles"
-import DisplayCard from "../../Assets/DisplayCard"
+import DisplayCard from "../../utils/DisplayCard"
 
 const useStyles = makeStyles(theme => ({
     root: {

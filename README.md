@@ -24,10 +24,10 @@ This Web App was built with the following tools and libraries:
 - AWS Amplify
 
 
-### Examples and Work Index
-Table of significant implementations of tech stack
+### Examples
+Table of significant implementations of the tech stack
 React/JS | Redux | MUI
 ------------ | ------------- | -------------
-* DOM components | ./src/Components/CardDesign | ./src/Components/Navigation (AppBar )
+Card Search | Card Designer | NavBar/Forms/ 
 
   

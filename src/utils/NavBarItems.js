@@ -57,11 +57,11 @@ const CompanyItems = [
   },
   {
     label: "Blog",
-    to: "",
+    to: "/blog",
   },
   {
     label: "Support",
-    to: "",
+    to: "/faq",
   },
   {
     label: "Terms & Condiditions",
